@@ -1,1 +1,1 @@
-import{b as a}from"./p-1cfe09be.js";import{p as e}from"./p-5a059910.js";e().then(e=>a([["p-9358ea83",[[1,"my-button",{label:[1],size:[1],variant:[1],disabled:[4]}]]]],e));
+import{b as a}from"./p-1cfe09be.js";import{p as b}from"./p-5a059910.js";b().then(b=>a([["p-bb731184",[[1,"my-button",{label:[1],size:[1],variant:[1],disabled:[4]}]]]],b));
