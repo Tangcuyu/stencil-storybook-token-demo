@@ -8,7 +8,7 @@ export default {
   },
 };
 
-const Template = (args) => Button(args);
+const Template = args => Button(args);
 
 export const Primary = Template.bind({});
 Primary.args = {
@@ -31,4 +31,11 @@ export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',
+};
+
+export const Disable = Template.bind({});
+Disable.args = {
+  size: 'small',
+  label: 'Button',
+  disabled: true,
 };

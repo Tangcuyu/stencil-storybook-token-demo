@@ -4,7 +4,7 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, onClick }) => {
+export const Button = ({ primary, backgroundColor, size, label, onClick, disabled }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
 
   return html`
@@ -13,6 +13,7 @@ export const Button = ({ primary, backgroundColor, size, label, onClick }) => {
       class=${['storybook-button', `storybook-button--${size || 'medium'}`, mode].join(' ')}
       style=${backgroundColor && { backgroundColor }}
       @click=${onClick}
+      disabled=${disabled}
     >
       ${label}
     </button>
