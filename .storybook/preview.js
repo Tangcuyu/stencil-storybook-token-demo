@@ -6,16 +6,14 @@ export const parameters = {
 
 export const globalTypes = {
   theme: {
-    name: 'Component Theme',
+    name: '组件主题',
     description: 'Global theme for components',
     defaultValue: 'brand-a-theme',
     toolbar: {
-      
-  
       // array of plain string values or MenuItem shape (see below)
       items: [
-        {value: 'brand-a-theme', title: 'Theme A'},
-        {value: 'brand-b-theme', title: 'Theme B'}
+        { value: 'brand-a-theme', title: '主题A' },
+        { value: 'brand-b-theme', title: '主题B' },
       ],
     },
   },
@@ -31,7 +29,6 @@ export const globalTypes = {
 
 // export const decorators = [storyWithTheme];
 
-export const decorators = [(story, context) => 
-  html`<div class='${context.globals.theme}'>${story()}</div>`]
+export const decorators = [(story, context) => html`<div class="${context.globals.theme}">${story()}</div>`];
 
 // export const decorators = [(story) => html`<div class='${theme}'>${story()}</div>`]
