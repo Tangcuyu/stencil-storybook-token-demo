@@ -1,1 +1,1 @@
-"use strict";const index=require("./index-9cc129fb.js"),patch=require("./patch-d6ea6fe9.js");patch.patchBrowser().then(options=>index.bootstrapLazy([["my-button.cjs",[[1,"my-button",{label:[1],size:[1],variant:[1],disabled:[4]}]]]],options));
+"use strict";const index=require("./index-4a82660a.js"),patch=require("./patch-8be60604.js");patch.patchBrowser().then(options=>index.bootstrapLazy([["my-button_3.cjs",[[1,"my-page"],[1,"my-button",{label:[1],size:[1],variant:[1],disabled:[4]}],[1,"my-card",{to:[1],label:[1],bgshadow:[4],target:[1],rel:[1],styles:[1]}]]]],options));

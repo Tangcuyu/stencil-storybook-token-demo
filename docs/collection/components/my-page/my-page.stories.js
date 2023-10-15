@@ -1,0 +1,1 @@
+import{html}from"lit-html";import readme from"./readme.md";export default{title:"Page",argTypes:{label:{control:"text"}},parameters:{notes:readme}};const Template=({label:label})=>html`<my-page label=${label} /> `;export const MultiTheme=Template.bind({});MultiTheme.args={label:"Multi theme button"};
