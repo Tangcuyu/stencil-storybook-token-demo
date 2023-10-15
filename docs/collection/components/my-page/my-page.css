@@ -1,0 +1,13 @@
+/**
+ * This is a demo for design tokens apply with figma
+ */
+
+:host {
+  display: block;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

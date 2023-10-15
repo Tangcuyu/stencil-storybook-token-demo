@@ -1,6 +1,8 @@
 {
   "entries": [
-    "./components/my-button/my-button.js"
+    "./components/my-button/my-button.js",
+    "./components/my-card/my-card.js",
+    "./components/my-page/my-page.js"
   ],
   "compiler": {
     "name": "@stencil/core",

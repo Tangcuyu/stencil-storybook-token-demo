@@ -12,6 +12,34 @@ export namespace Components {
         "size"?: 'small' | 'large';
         "variant"?: 'primary' | 'secondary' | 'tertiary';
     }
+    interface MyCard {
+        /**
+          * 是否有阴影
+         */
+        "bgshadow": boolean;
+        /**
+          * 可选属性 卡片标签
+         */
+        "label"?: string;
+        /**
+          * 可选属性 卡片引用 {string}
+         */
+        "rel"?: string;
+        /**
+          * 可选属性 可注入的CSS样式 {string}
+         */
+        "styles"?: string;
+        /**
+          * 可选属性 可链接卡片的目标 {string}
+         */
+        "target"?: string;
+        /**
+          * (optional) Link card
+         */
+        "to"?: string;
+    }
+    interface MyPage {
+    }
 }
 declare global {
     interface HTMLMyButtonElement extends Components.MyButton, HTMLStencilElement {
@@ -20,8 +48,22 @@ declare global {
         prototype: HTMLMyButtonElement;
         new (): HTMLMyButtonElement;
     };
+    interface HTMLMyCardElement extends Components.MyCard, HTMLStencilElement {
+    }
+    var HTMLMyCardElement: {
+        prototype: HTMLMyCardElement;
+        new (): HTMLMyCardElement;
+    };
+    interface HTMLMyPageElement extends Components.MyPage, HTMLStencilElement {
+    }
+    var HTMLMyPageElement: {
+        prototype: HTMLMyPageElement;
+        new (): HTMLMyPageElement;
+    };
     interface HTMLElementTagNameMap {
         "my-button": HTMLMyButtonElement;
+        "my-card": HTMLMyCardElement;
+        "my-page": HTMLMyPageElement;
     }
 }
 declare namespace LocalJSX {
@@ -32,8 +74,38 @@ declare namespace LocalJSX {
         "size"?: 'small' | 'large';
         "variant"?: 'primary' | 'secondary' | 'tertiary';
     }
+    interface MyCard {
+        /**
+          * 是否有阴影
+         */
+        "bgshadow"?: boolean;
+        /**
+          * 可选属性 卡片标签
+         */
+        "label"?: string;
+        /**
+          * 可选属性 卡片引用 {string}
+         */
+        "rel"?: string;
+        /**
+          * 可选属性 可注入的CSS样式 {string}
+         */
+        "styles"?: string;
+        /**
+          * 可选属性 可链接卡片的目标 {string}
+         */
+        "target"?: string;
+        /**
+          * (optional) Link card
+         */
+        "to"?: string;
+    }
+    interface MyPage {
+    }
     interface IntrinsicElements {
         "my-button": MyButton;
+        "my-card": MyCard;
+        "my-page": MyPage;
     }
 }
 export { LocalJSX as JSX };
@@ -41,6 +113,8 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-button": LocalJSX.MyButton & JSXBase.HTMLAttributes<HTMLMyButtonElement>;
+            "my-card": LocalJSX.MyCard & JSXBase.HTMLAttributes<HTMLMyCardElement>;
+            "my-page": LocalJSX.MyPage & JSXBase.HTMLAttributes<HTMLMyPageElement>;
         }
     }
 }
