@@ -160,6 +160,7 @@
   --card-width-sm: 960px;
   --card-body: 16px;
   --card-height-unit: 270px;
+  --card-radius: 24px;
       }
 .brand-b-theme {
           --color-primary-default: #5a7adc;
@@ -183,6 +184,7 @@
   --color-disabled-background: #f5f5f5;
   --color-disabled-border: #adadad;
   --button-magrin-bottom: 24px;
+  --card-width-unit: 960px;
       }
 :root {
   --li-token-color-text-and-icon-standard: #000000;
