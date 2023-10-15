@@ -7,15 +7,15 @@ export const config: Config = {
   outputTargets: [
     reactOutputTarget({
       componentCorePackage: '@nyan-matt/stencil-storybook-token-demo',
-      proxiesFile: '../@nyan-matt\/stencil-storybook-token-demo-react/src/components.ts',
+      proxiesFile: '../@nyan-matt/stencil-storybook-token-demo-react/src/components.ts',
     }),
     {
       type: 'dist',
       esmLoaderPath: '../loader',
     },
-    {
-      type: 'dist-custom-elements-bundle',
-    },
+    // {
+    //   type: 'dist-custom-elements-bundle',
+    // },
     {
       type: 'docs-readme',
     },
@@ -25,4 +25,3 @@ export const config: Config = {
     },
   ],
 };
-

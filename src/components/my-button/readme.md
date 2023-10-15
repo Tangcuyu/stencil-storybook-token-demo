@@ -22,6 +22,19 @@
 | `buttonClicked` |             | `CustomEvent<any>` |
 
 
+## Dependencies
+
+### Used by
+
+ - [my-page](../my-page)
+
+### Graph
+```mermaid
+graph TD;
+  my-page --> my-button
+  style my-button fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
