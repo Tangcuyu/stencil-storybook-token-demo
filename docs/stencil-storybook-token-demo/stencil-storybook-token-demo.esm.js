@@ -1,1 +1,1 @@
-import{b as a}from"./p-22cdc34b.js";import{p as e}from"./p-e50baedd.js";e().then(e=>a([["p-247324de",[[1,"my-page"],[1,"my-button",{label:[1],size:[1],variant:[1],disabled:[4]}],[1,"my-card",{to:[1],label:[1],bgshadow:[4],target:[1],rel:[1],styles:[1]}]]]],e));
+import{b as a}from"./p-22cdc34b.js";import{p as e}from"./p-e50baedd.js";e().then(e=>a([["p-fb20873c",[[1,"my-page"],[1,"my-button",{label:[1],size:[1],variant:[1],disabled:[4]}],[1,"my-card",{to:[1],label:[1],bgshadow:[4],target:[1],rel:[1],styles:[1]}]]]],e));
