@@ -774,9 +774,9 @@
 
 :host {
   --width: var(--card-width-unit);
-  --background: var(--li-token-color-background-surface);
+  --background: var(--color-primary-default);
   --transition: all var(--li-token-motion-duration-transition) var(--li-token-motion-easing-standard);
-  --radius: var(--li-token-radius-large);
+  --radius: var(--card-radius);
   --box-shadow: var(--li-token-shadow-raised-standard);
   --box-shadow-hover: var(--li-token-shadow-raised-hover);
   --box-shadow-focus: 0 0 0 var(--li-token-line-weight-highlight) var(--li-token-color-functional-focus);
@@ -798,6 +798,7 @@
   background: var(--background);
   transition: var(--transition);
   border-radius: var(--radius);
+  margin-bottom: var(--card-gap);
 }
 
 .card__shadow {
