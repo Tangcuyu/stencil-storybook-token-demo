@@ -187,6 +187,7 @@
   --card-bottom-sm: 12px;
   --card-bottom-lg: 24px;
   --card-bottom-xxl: 32px;
+  --card-gap: 12px;
       }
 .brand-b-theme {
           --color-primary-default: #5ad8a6;
@@ -198,6 +199,7 @@
   --color-disabled-background: #cdf3e3;
   --color-disabled-border: #945fb9;
   --card-width-unit: 960px;
+  --card-gap: 48px;
       }
 
 /* TODO: move base to preview.js */
