@@ -2,8 +2,13 @@
  * This is a demo for design tokens apply with figma
  */
 
+@import '../../css/base.css';
+@import '../../css/brand-a.css';
+@import '../../css/brand-b.css';
+
 :host {
   display: block;
+  --gap: var(--card-gap);
 }
 
 .card-header {
